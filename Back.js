@@ -4,12 +4,23 @@ let Text = document.getElementById('Menssage').value;
 let Name = document.getElementById('Name').value;
 let arrayT = [];
 
+switch (Text){
+    case 'Inadequada':
+        console.log('Block')/
+        window.alert('Palavra bloqueada');
+        Text = '' , Name = '';
+        break
+    
+}
+
+
+
 
 if(Text == '' || Name == ''){
     window.alert('Por favor preencha os campos corretamente!');
     }
 else{
-    
+
     arrayT.push(Text);
     console.log(Name);
     console.log(arrayT);
@@ -24,6 +35,9 @@ else{
     Nome.style.fontFamily = 'Decker, bold';
     Nome.style.fontSize = "30px";
     Nome.style.width = "300px";
+    Nome.style.lineHeight = '50px';
+    Nome.style.borderStyle = 'Solid';
+    Nome.style.textAlign = 'Center'
     
 
     //Criar um novo comentario*/
@@ -34,7 +48,11 @@ else{
     document.body.insertBefore(comentario ,Atual);
     comentario.style.fontFamily = 'Decker';
     comentario.style.fontSize = '20px';
+    comentario.style.lineHeight = '10px';
     
+
+
+
  
     }
 
